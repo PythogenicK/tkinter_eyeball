@@ -1,0 +1,42 @@
+GOAL:
+Create Tkinter application that will be able to store and call data from SQLITE3 database.
+Application may also amend, delete or add entries in the database.
+Information is clearly formatted for easy reading by user.
+
+USE:
+Application intended as image reference/library for illustrators.
+Database for artworks is pre-packaged, but further artworks may be added to the database by user.
+
+ISSUES:
+Some instances of the logo image widget have been duplicating when not called to.(on-going bug)
+Optimization still a work in progress.
+
+SUGGESTIONS FOR FUTURE BUILD:
+Rigorous SQLITE3 security measures deployed for this application.
+Attachment of images must be implemented.
+
+EXPLANATION OF APPLICATION:
+This application is a GUI-based Tkinter application that interacts with a SQLite database to manage and display information about various art productions. The application has the following key functions:
+
+Create Table: The user can create a new table in the database by providing details like the title, artist, movement, medium, and year of the art production.
+View Entries: The application displays a list of all the tables (art productions) stored in the database. The user can view the details of each entry by clicking on the "View" button.
+Edit Entries: The user can edit the details of an existing art production by clicking on the "Edit" button in the entry's details window.
+Delete Entries: The user can delete an existing art production by clicking on the "Delete" button in the entry's details window.
+Random Display: The application can randomly display the details of an art production from the database, providing a way for the user to explore the collection.
+
+The application uses a SQLite database to store the art production information. SQLite is a lightweight, file-based database management system that is well-suited for this type of application, as it does not require a separate database server and can be easily integrated into the Tkinter application.
+Strengths of the application:
+
+User-friendly Interface: The Tkinter-based GUI provides a visually appealing and intuitive interface for the user to interact with the application.
+Database Integration: The application seamlessly integrates with the SQLite database, allowing for efficient storage and retrieval of art production data.
+CRUD Operations: The application supports all the basic CRUD (Create, Read, Update, Delete) operations, making it a comprehensive tool for managing the art production information.
+Randomized Display: The ability to randomly display art production details adds an element of surprise and exploration for the user.
+
+Limitations of the application:
+
+Limited Scalability: As the database grows in size, the performance of the application may be affected, especially when displaying a large number of entries or performing database operations.
+Lack of Advanced Features: The application focuses on the basic functionality of managing art production data and may not have advanced features like data visualization, reporting, or integration with external data sources.
+Dependency on Tkinter: The application is heavily dependent on the Tkinter library, which may limit its cross-platform compatibility or require additional effort to adapt to other GUI frameworks.
+No User Authentication: The application does not have any user authentication or access control mechanisms, which could be a limitation in a production environment where multiple users need to interact with the data.
+
+Overall, this Tkinter application provides a functional and user-friendly interface for managing art production information stored in a SQLite database. The strengths of the application include its intuitive interface, database integration, and CRUD operations, while the limitations are primarily related to scalability, advanced features, and the dependency on Tkinter.
